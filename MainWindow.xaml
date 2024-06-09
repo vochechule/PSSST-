@@ -1,0 +1,61 @@
+﻿<Window x:Class="Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project"
+        mc:Ignorable="d"
+        Title="PSSSSSSS!" Height="auto" Width="800"
+        Background="{StaticResource BackgroundColor}"
+        Foreground="{StaticResource TextColor}"
+        FontFamily="{StaticResource MainFont}"
+        WindowStartupLocation="CenterScreen"
+        Icon="Assets/worm2.png"
+        Loaded="Window_Loaded"
+        KeyDown="Window_KeyDown">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="ScoreText"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Text="SCORE 0"
+                   FontSize="22"
+                   Margin="497,0,0,0"
+                   FontFamily="{StaticResource MainFont}"/>
+
+        <TextBlock x:Name="FlowerHPText"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Text="FLOWER HP: 5"
+                   FontSize="22"
+                   Margin="179,0,0,0"
+                   FontFamily="{StaticResource MainFont}"/>
+
+        <Border x:Name="GridBorder"
+            Grid.Row="2"
+            BorderBrush="White"
+                BorderThickness="1.5"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                RenderOptions.EdgeMode="Aliased">
+
+
+            <UniformGrid x:Name="GameGrid"
+             Width="660"
+             Height="420"
+             Background="{StaticResource BackgroundColor}"
+             SnapsToDevicePixels="True"
+             RenderOptions.BitmapScalingMode="HighQuality">
+
+            </UniformGrid>
+        </Border>
+
+    </Grid>
+</Window>

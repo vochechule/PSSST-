@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\background.png" />
+    <None Remove="Assets\brick.png" />
+    <None Remove="Assets\character.png" />
+    <None Remove="Assets\flowerstem.png" />
+    <None Remove="Assets\flowertopold.png" />
+    <None Remove="Assets\flowertopyoung.png" />
+    <None Remove="Assets\font.TTF" />
+    <None Remove="Assets\ground.png" />
+    <None Remove="Assets\leafleft.png" />
+    <None Remove="Assets\leafright.png" />
+    <None Remove="Assets\projectile.png" />
+    <None Remove="Assets\worm.png" />
+    <None Remove="Assets\worm2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\background.png" />
+    <Resource Include="Assets\brick.png" />
+    <Resource Include="Assets\character.png" />
+    <Resource Include="Assets\flowerstem.png" />
+    <Resource Include="Assets\flowertopold.png" />
+    <Resource Include="Assets\flowertopyoung.png" />
+    <Resource Include="Assets\ground.png" />
+    <Resource Include="Assets\leafleft.png" />
+    <Resource Include="Assets\leafright.png" />
+    <Resource Include="Assets\projectile.png" />
+    <Resource Include="Assets\font.TTF" />
+    <Resource Include="Assets\worm.png" />
+    <Resource Include="Assets\worm2.png" />
+  </ItemGroup>
+
+</Project>
